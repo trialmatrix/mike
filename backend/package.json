@@ -8,7 +8,7 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.90.0",
+    "@anthropic-ai/sdk": "^0.91.1",
     "@aws-sdk/client-s3": "^3.787.0",
     "@aws-sdk/s3-request-presigner": "^3.787.0",
     "@google/genai": "^1.50.1",
@@ -24,18 +24,23 @@
     "jszip": "^3.10.1",
     "libreoffice-convert": "^1.6.0",
     "mammoth": "^1.9.0",
-    "multer": "^1.4.5-lts.2",
+    "multer": "^2.5.0",
     "pdfjs-dist": "^4.10.38",
     "resend": "^4.5.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
-    "@types/multer": "^1.4.12",
+    "@types/multer": "^2.3.0",
     "@types/node": "^22.14.1",
     "prettier": "^3.8.1",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3"
   },
-  "license": "AGPL-3.0-only"
+  "license": "AGPL-3.0-only",
+  "overrides": {
+    "express": {
+      "qs": "^6.16.1"
+    }
+  }
 }
